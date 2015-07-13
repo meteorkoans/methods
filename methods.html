@@ -1,0 +1,21 @@
+<head>
+  <title>methods</title>
+</head>
+
+<body>
+  {{> form}}
+  {{> list}}
+</body>
+
+<template name="form">
+  <input type="text" id="item" />
+</template>
+
+
+<template name="list">
+<ul>
+  {{#each items}}
+  <li>{{text}}</li>
+  {{/each}}
+</ul>
+</template>
